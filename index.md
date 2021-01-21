@@ -32,13 +32,14 @@ pdf_document:
 bibliography: bibliography.bib
 knit: 
   # render to index.html for GitHub pages
-  # render to 01_final_opa.html to knit locally
+  # render to 05_final_opa.html to knit locally
   # YAML does not support commenting inside the function
-   (function(input_file, encoding) {
-   rmarkdown::render(input_file, encoding=encoding, output_file=file.path("..", 'index.html')); 
-   rmarkdown::render(input_file, encoding=encoding, output_file='01_final_opa.html'); 
-   })
+  (function(input_file, encoding) {
+  rmarkdown::render(input_file, encoding=encoding, output_file=file.path("..", 'index.html'));
+  rmarkdown::render(input_file, encoding=encoding, output_file='01_final_opa.html');
+  })
 ---
+
 \def\blue{\color{blue}}
 \def\red{\color{red}}
 
