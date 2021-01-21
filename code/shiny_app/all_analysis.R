@@ -42,7 +42,7 @@ knitr::opts_chunk$set(message = FALSE)
 knitr::opts_chunk$set(warning = FALSE)
 knitr::opts_chunk$set(fig.width=12, fig.height=8)
 #options(knitr.duplicate.label = "allow") # workaround for purl error
-#knitr::purl("code/05_final_opa.Rmd", "code/shiny_app/all_analysis.R")
+#knitr::purl("code/01_final_opa.Rmd", "code/shiny_app/all_analysis.R")
 
 # (function(input_file, encoding) {
 #   output_dir <- ;
@@ -78,16 +78,16 @@ chunk_sources <- function(){
     #############
     # ATTENTION!
     # costs2_ea_in
-    ex_rate_so <- 83               #Exchange Rate - Central Bank of Kenya 74 , 85
+    ex_rate_so <- 53               #Exchange Rate - Central Bank of Kenya 74 , 85
     ex_rate_2018_so        <- 101.30  # Exchange rate (KES per international $)
                                     # - https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=KE
     ex_rate_2018_ppp_so <- 50.058   # KLPS4_E+_globals.do (originally from the World Bank)
     ex_rate_2017_ppp_so <- 49.773   # KLPS4_E+_globals.do (originally from the World Bank)
     growth_rate_so <- 1.52/100     #Per-capita GDP growth, 2002-2011 (accessed 1/29/13) -	World Bank - see notes
     gov_bonds_so <- 	0.1185	     #Kenyan interest on sovereign debt - Central Bank of Kenya
-    gov_bonds_new_so <- 0.14
+    gov_bonds_new_so <- 0.08
     inflation_so <-  0.02          #Kenyan inflation rate - World Bank Development Indicators
-    inflation_new_so <- 0.04
+    inflation_new_so <- 0.05
     tax_so <- 0.16575              #ADD INFO!
 
     # costs data
@@ -133,7 +133,7 @@ chunk_sources <- function(){
     lambda2_so <- 10.2                  #Externality effect (proportional) - Table 3, row 1 col 4
     lambda2_sd_so <- 7.8                # Table 3, row 2 col 4
     #This is are the parameters labeled eta in the doc
-    prevalence_0_so <- 1 # 0.92 doi: https://doi.org/10.1111/j.1468-0262.2004.00481.x  location: table 2, row 6, column 1
+    prevalence_0_so <- 0.7 # 0.92 doi: https://doi.org/10.1111/j.1468-0262.2004.00481.x  location: table 2, row 6, column 1
     wage_ag_so <- 	11.84	         #Mean hourly wage rate (KSH) - Suri 2011
     wage_ww_so <- 	14.5850933     #Control group hourly wage, ww (cond >=10 hrs per week) - Table 4, Panel B (Source data took the log, here the log is recovered)
     profits_se_so <- 1766          #Control group monthly self-employed profits -
@@ -198,7 +198,7 @@ chunk_sources <- function(){
     # prevalence_r_in
     prevalence_r_so <- c("india" = 0.5665, "kenya" = 0.345, "nigeria" = 0.27, "vietnam" = 0.145)  #0.5665   0.5013121
     # based on https://docs.google.com/spreadsheets/d/1drKdU-kRjlRtwXq6nCqFC6gcoQ-eOaLfT9MWHSMZ0MA/edit?usp=sharing
-    new_prevalence_r_so <- 0.2
+    new_prevalence_r_so <- 0.6
     years_of_treat_t_so <- 2.41      #Years of Treatment in new setting
     staff_time_so <- 0.3           #Added Deworming costs due to government staff time
     time_to_jm_so <- 10            #Time from initial period until individual join the labor force

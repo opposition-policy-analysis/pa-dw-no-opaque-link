@@ -77,7 +77,7 @@ shinyUI(
         "
       ))
     ),
-    theme = shinytheme("cerulean"),
+    theme = shinytheme("united"),
     navbarPage("Open Policy Analysis for Deworming Interventions: Open Output Component",id = "asd",
                # Begin main policy estimate tab ----
                tabPanel(
@@ -106,6 +106,8 @@ shinyUI(
                   )),
                   fluidRow(
                     style = "width: 100%; height: 100%; max-width: 400px;",
+                    p("Note: this policy analysis have been modified to illustrate the role of opaqueness in policy analysis, and they do not represent accurate estimates of the effect of deworming. For an open policy analysis that does represent the best available policy estimates on the effects of deworming see", 
+                      tags$a(href = "http://www.bitss.org/opa/projects/deworming/", "here")),   
                     p(
                       "This visualization is one of three key components of an",
                       tags$a(href = "http://www.bitss.org/opa/projects/deworming/", "Open Policy Analysis (OPA)"),
@@ -224,39 +226,39 @@ shinyUI(
                                             <tr>
                                               <th>Country</th>
                                               <th>Unit Costs</th>
-                                              <th>Prevalence</th>
-<!--                                          <th>Length of Treatment</th> -->
+<!--                                              <th>Prevalence</th>
+                                          <th>Length of Treatment</th> -->
                                             </tr>
                                             <tr>
                                               <th>India</th>
                                               <td><var>', round(costs_temp_india,2),'</var></td>
-                                              <td><var>',round(prevalence_india,2),'</var></td>
-<!--                                          <td><var>', round(length_temp_india,2),'</var></td> -->
+<!--                                              <td><var>',round(prevalence_india,2),'</var></td>
+                                          <td><var>', round(length_temp_india,2),'</var></td> -->
                                             </tr>
                                             <tr>
                                               <th>Kenya</th>
                                               <td><var>',round(costs_temp_kenya,2),'</var></td>
-                                              <td><var>',round(prevalence_kenya,2),'</var></td>
-<!--                                          <td><var>',round(length_temp_kenya,2),'</var></td> -->
+<!--                                              <td><var>',round(prevalence_kenya,2),'</var></td>
+                                          <td><var>',round(length_temp_kenya,2),'</var></td> -->
 
                                             </tr>
                                             <tr>
                                               <th>Nigeria</th>
                                               <td><var>',round(costs_temp_nigeria,2),'</var></td>
-                                              <td><var>',round(prevalence_nigeria,2),'</var></td>
-<!--                                          <td><var>',round(length_temp_nigeria,2),'</var></td> -->
+<!--                                              <td><var>',round(prevalence_nigeria,2),'</var></td>
+                                          <td><var>',round(length_temp_nigeria,2),'</var></td> -->
                                             </tr>
                                             <tr>
                                               <th>Vietnam</th>
                                               <td><var>',round(costs_temp_vietnam,2),'</var></td>
-                                              <td><var>',round(prevalence_vietnam,2),'</var></td>
-<!--                                          <td><var>', round(length_temp_vietnam,2),'</var></td> -->
+<!--                                              <td><var>',round(prevalence_vietnam,2),'</var></td>
+                                          <td><var>', round(length_temp_vietnam,2),'</var></td> -->
                                             </tr>
                                             <tr>
                                               <th>Original Study</th>
                                               <td><var>', round(costs_temp_original,2),'</var></td>
-                                              <td><var>', round(prevalence_original,2),'</var></td>
-<!--                                          <td><var>', round(length_temp_original,2),'</var></td> -->
+<!--                                              <td><var>', round(prevalence_original,2),'</var></td>
+                                          <td><var>', round(length_temp_original,2),'</var></td> -->
                                             </tr>
                                           </table>
 
