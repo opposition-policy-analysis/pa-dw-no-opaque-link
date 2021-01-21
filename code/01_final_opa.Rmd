@@ -39,6 +39,7 @@ knit:
    # rmarkdown::render(input_file, encoding=encoding, output_file='01_final_opa.html'); 
    # })
 ---
+
 \def\blue{\color{blue}}
 \def\red{\color{red}}
 

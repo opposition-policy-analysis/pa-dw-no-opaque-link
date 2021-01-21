@@ -34,10 +34,10 @@ knit:
   # render to index.html for GitHub pages
   # render to 01_final_opa.html to knit locally
   # YAML does not support commenting inside the function
-   (function(input_file, encoding) {
-   rmarkdown::render(input_file, encoding=encoding, output_file=file.path("..", 'index.html')); 
-   rmarkdown::render(input_file, encoding=encoding, output_file='01_final_opa.html'); 
-   })
+   # (function(input_file, encoding) {
+   # rmarkdown::render(input_file, encoding=encoding, output_file=file.path("..", 'index.html')); 
+   # rmarkdown::render(input_file, encoding=encoding, output_file='01_final_opa.html'); 
+   # })
 ---
 \def\blue{\color{blue}}
 \def\red{\color{red}}
@@ -264,7 +264,7 @@ invisible( list2env(chunk_sources(),.GlobalEnv) )
 
 
 
-<img src="/Users/fhoces/Desktop/sandbox/pa-dw-no-opaque-link/code/images/main_pe.png" width="100%" style="display: block; margin: auto;" />
+<img src="/Users/fhoces/Desktop/sandbox/pa-dw-yes-opaque-link/code/images/main_pe.png" width="100%" style="display: block; margin: auto;" />
 
 **Note:** this policy analysis have been modified to illustrate the role of opaqueness in policy analysis, and they do not represent accurate estimates of the effect of deworming. For an open policy analysis that does represent the best available policy estimates on the effects of deworming see [here](http://www.bitss.org/opa/projects/deworming/). 
 
