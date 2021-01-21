@@ -15,7 +15,7 @@ output:
     keep_md: yes
     number_sections: yes
     smooth_scroll: no
-    theme: united
+    theme: yeti
     toc: yes
     toc_collapsed: no
     toc_depth: 3
@@ -32,12 +32,12 @@ pdf_document:
 bibliography: bibliography.bib
 knit: 
   # render to index.html for GitHub pages
-  # render to 05_final_opa.html to knit locally
+  # render to 01_final_opa.html to knit locally
   # YAML does not support commenting inside the function
-  (function(input_file, encoding) {
-  rmarkdown::render(input_file, encoding=encoding, output_file=file.path("..", 'index.html'));
-  rmarkdown::render(input_file, encoding=encoding, output_file='01_final_opa.html');
-  })
+   (function(input_file, encoding) {
+   rmarkdown::render(input_file, encoding=encoding, output_file=file.path("..", 'index.html')); 
+   rmarkdown::render(input_file, encoding=encoding, output_file='01_final_opa.html'); 
+   })
 ---
 \def\blue{\color{blue}}
 \def\red{\color{red}}
@@ -124,16 +124,16 @@ chunk_sources <- function(){
     #############
     # ATTENTION!
     # costs2_ea_in
-    ex_rate_so <- 53               #Exchange Rate - Central Bank of Kenya 74 , 85
+    ex_rate_so <- 83               #Exchange Rate - Central Bank of Kenya 74 , 85
     ex_rate_2018_so        <- 101.30  # Exchange rate (KES per international $)
                                     # - https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=KE
     ex_rate_2018_ppp_so <- 50.058   # KLPS4_E+_globals.do (originally from the World Bank)
     ex_rate_2017_ppp_so <- 49.773   # KLPS4_E+_globals.do (originally from the World Bank)
     growth_rate_so <- 1.52/100     #Per-capita GDP growth, 2002-2011 (accessed 1/29/13) -	World Bank - see notes
     gov_bonds_so <- 	0.1185	     #Kenyan interest on sovereign debt - Central Bank of Kenya
-    gov_bonds_new_so <- 0.08
+    gov_bonds_new_so <- 0.14
     inflation_so <-  0.02          #Kenyan inflation rate - World Bank Development Indicators
-    inflation_new_so <- 0.05
+    inflation_new_so <- 0.04
     tax_so <- 0.16575              #ADD INFO!
 
     # costs data
@@ -176,7 +176,7 @@ chunk_sources <- function(){
     lambda2_so <- 10.2                  #Externality effect (proportional) - Table 3, row 1 col 4
     lambda2_sd_so <- 7.8                # Table 3, row 2 col 4
     #This is are the parameters labeled eta in the doc
-    prevalence_0_so <- 0.7 # 0.92 doi: https://doi.org/10.1111/j.1468-0262.2004.00481.x  location: table 2, row 6, column 1
+    prevalence_0_so <- 1 # 0.92 doi: https://doi.org/10.1111/j.1468-0262.2004.00481.x  location: table 2, row 6, column 1
     wage_ag_so <- 	11.84	         #Mean hourly wage rate (KSH) - Suri 2011
     wage_ww_so <- 	14.5850933     #Control group hourly wage, ww (cond >=10 hrs per week) - Table 4, Panel B (Source data took the log, here the log is recovered)
     profits_se_so <- 1766          #Control group monthly self-employed profits -
@@ -236,7 +236,7 @@ chunk_sources <- function(){
     # prevalence_r_in
     prevalence_r_so <- c("india" = 0.5665, "kenya" = 0.345, "nigeria" = 0.27, "vietnam" = 0.145)  #0.5665   0.5013121
     # based on https://docs.google.com/spreadsheets/d/1drKdU-kRjlRtwXq6nCqFC6gcoQ-eOaLfT9MWHSMZ0MA/edit?usp=sharing
-    new_prevalence_r_so <- 0.6
+    new_prevalence_r_so <- 0.2
     years_of_treat_t_so <- 2.41      #Years of Treatment in new setting
     staff_time_so <- 0.3           #Added Deworming costs due to government staff time
     time_to_jm_so <- 10            #Time from initial period until individual join the labor force
@@ -264,9 +264,9 @@ invisible( list2env(chunk_sources(),.GlobalEnv) )
 
 
 
-<img src="/Users/fhoces/Desktop/sandbox/pa-dw-yes-opaque-link/code/images/main_pe.png" width="100%" style="display: block; margin: auto;" />
+<img src="/Users/fhoces/Desktop/sandbox/pa-dw-no-opaque-link/code/images/main_pe.png" width="100%" style="display: block; margin: auto;" />
 
-**Note:** thise policy analysis have been modified to illustrate the role of opaqueness in policy analysis, and they do not represent accurate estimates of the effect of deworming. For an open policy analysis that does represent the best available policy estimates on the effects of deworming see [here](http://www.bitss.org/opa/projects/deworming/). 
+**Note:** this policy analysis have been modified to illustrate the role of opaqueness in policy analysis, and they do not represent accurate estimates of the effect of deworming. For an open policy analysis that does represent the best available policy estimates on the effects of deworming see [here](http://www.bitss.org/opa/projects/deworming/). 
 
 
 <div class = "divider"><span></span><span>
@@ -483,7 +483,7 @@ interest_new_in <- as.numeric(
 </details>
 <br>
 
-The actual value varies across approaches depending on the time and country chosen. For example approach 1 uses the return from government bonds and the inflation rate in Kenya for the year 2016, while approaches 2 and 3 uses the values for the same country for the year 2019. This results in discount rates of 9.85% and 3% for approach 1 and, 2 and 3 respectively.
+The actual value varies across approaches depending on the time and country chosen. For example approach 1 uses the return from government bonds and the inflation rate in Kenya for the year 2016, while approaches 2 and 3 uses the values for the same country for the year 2019. This results in discount rates of 9.85% and 10% for approach 1 and, 2 and 3 respectively.
 
 
 
@@ -832,7 +832,7 @@ pv_benef_yes_ext_in <- pv_benef_f(
 
 #### Assessing computational reproducibility of original results  
 
-Without externalities, the original analysis (@baird2016worms) obtains a present value of benefits of 142.43 (table 5, column 3, and row 9). Including externalities, they obtain a present value of benefits of 766.81 (table 5, column 3, and row 12). Following the steps described in this section, this analysis obtains the same result (113.8213493 and 612.8089265 respectively without rounding).  
+Without externalities, the original analysis (@baird2016worms) obtains a present value of benefits of 142.43 (table 5, column 3, and row 9). Including externalities, they obtain a present value of benefits of 766.81 (table 5, column 3, and row 12). Following the steps described in this section, this analysis obtains the same result (72.6811026 and 391.3117241 respectively without rounding).  
 
 
 
@@ -1036,7 +1036,7 @@ pv_cost_yes_ext_in <- pv_costs_f(
 
 #### Assessing computational reproducibility of original results  
 
-Without externalities, the original analysis (@baird2016worms) obtains a present value of costs of 11.78 (table 5, column 3, and adding rows 6 and 3). Including externalities, they obtain a present value of benefits of  25.2 (table 5, column 3, and adding rows 6 and 3 and 7). Following the steps described in this section, this analysis obtains the same result (12.1987339 and 25.6187588 respectively without rounding).  
+Without externalities, the original analysis (@baird2016worms) obtains a present value of costs of 11.78 (table 5, column 3, and adding rows 6 and 3). Including externalities, they obtain a present value of benefits of  25.2 (table 5, column 3, and adding rows 6 and 3 and 7). Following the steps described in this section, this analysis obtains the same result (11.6605517 and 25.0805766 respectively without rounding).  
 
 
 
@@ -1180,7 +1180,7 @@ q2_in <- q_full_so
 </details>
 <br>
 
-With complete subsidy, the costs of the intervention become the total direct costs of deworming each child (in USD). Most recent (2018) data from Evidence Action reveals this cost to be \$0.42 per year. Adjusting for purchasing power and inflation, the report gets a per capita cost of \$0.83. Adding all indirect cost over an average 2.4 years of treatment, the average cost of deworming each child over the entire treatment period is $1.46.
+With complete subsidy, the costs of the intervention become the total direct costs of deworming each child (in USD). Most recent (2018) data from Evidence Action reveals this cost to be \$0.42 per year. Adjusting for purchasing power and inflation, the report gets a per capita cost of \$0.83. Adding all indirect cost over an average 2.4 years of treatment, the average cost of deworming each child over the entire treatment period is $1.39.
 
 
 #### Indirect costs: additional years of education and its costs for government  
@@ -1211,12 +1211,12 @@ Where:
 </details>
 <br>
 
-Over this nine year period, treated students attended school for an additional 0.15 years on average. Then the report gets an average cost of additional schooling per child over the nine-year period, $35.10.
+Over this nine year period, treated students attended school for an additional 0.15 years on average. Then the report gets an average cost of additional schooling per child over the nine-year period, $26.82.
 
 
 ### Assessing computational reproducibility of original results  
 
-The second approach does not report benefits and costs separatedly. With all these elements the main result from the original analysis that is comparable with the results discussed here is a NPV of 499.72 (table A12, column 3, and row 6) This result corresponds to a social internal rate of return of 40.7% located as an inline result in the paper - also in Figure 1 - and in the appendix at table A12, column 3, and row 9). Following the steps described in this section, this analysis obtains the same result (691.9752458 and 40.7492806546435% respectively without rounding).
+The second approach does not report benefits and costs separatedly. With all these elements the main result from the original analysis that is comparable with the results discussed here is a NPV of 499.72 (table A12, column 3, and row 6) This result corresponds to a social internal rate of return of 40.7% located as an inline result in the paper - also in Figure 1 - and in the appendix at table A12, column 3, and row 9). Following the steps described in this section, this analysis obtains the same result (230.7134947 and 40.7492806546435% respectively without rounding).
 
 
 
@@ -1234,7 +1234,7 @@ Under this approach, the benefits from deworming described in Approaches 1 and 2
 
 To account for different prevalence rates ($\eta$), the estimated treatment effect is decomposed in the impact of deworming on children who were treated and had a worm infection, or the effective treatment effect of deworming ($\lambda_{1}^{eff}$), and children who were treated and did not have a worm infection. By construction, the effect on this last group should be zero. Hence the effective treatment of deworming on infected populations will be equal to the estimated treatment (on the ovearll population), divided by the proportion of the prevalence of infections.
 
-In the original evaluation, the prevalence rates were very high (0.7), hence the effect on the infected population was similar to that of the overall population. Currently deworming interventions are often implemented in geographies with much lower prevalence rates (though in populations with sufficient infection to justify treatment in accordance with World Health Organization guidelines), hence to obtain the expected effect over the new region, the report needs to multiply the effect on the infected population by the prevalence rate in the new region ($\eta_{new}$).
+In the original evaluation, the prevalence rates were very high (1), hence the effect on the infected population was similar to that of the overall population. Currently deworming interventions are often implemented in geographies with much lower prevalence rates (though in populations with sufficient infection to justify treatment in accordance with World Health Organization guidelines), hence to obtain the expected effect over the new region, the report needs to multiply the effect on the infected population by the prevalence rate in the new region ($\eta_{new}$).
 
 
 <details><summary>Show all the details</summary>
@@ -1447,7 +1447,7 @@ Now the benefits are flexible to worm prevalence and lenght of treatment. To fac
 
 To compute the benefits for this approach, this paper uses data on prevalence and length of treatment for the four countries that Evidence Action has records for. Readers interested in assessing the effects of deworming for a specific value of prevalence and length of treatment are referred to the [interactive app](https://fhoces.shinyapps.io/shiny_app_test/) (tab on key assumptions) where they can input the values that best reflect their setting. To facilitate comparison with the other two approaches, this paper presents here the results using the same length of treatment assumptions parameters as in approach 1 and 2.  
 
-Under approach 3, and using the same assumptions as above, the benefits will be: 81.51 and 580.5 when using benefits of approach 1 without and with externalities, and 521.02 when using the benefit structure of approach 2.  
+Under approach 3, and using the same assumptions as above, the benefits will be: 36.44 and 355.07 when using benefits of approach 1 without and with externalities, and 128.58 when using the benefit structure of approach 2.  
 
 ### Costs
 
@@ -2553,12 +2553,12 @@ unit_test_f(ea3_pe, 289.751849813911)
 
 | Approach | Benefits                               | Costs                        | Social NPV (all)          | Fiscal NPV (tax)          |
 |----------|----------------------------------------|------------------------------|---------------------------|---------------------------|
-| 1.1      | @baird2016worms with no externalities  | Treatment, Education         | 101.6   | 6.7   |
-| 1.2      | @baird2016worms with externalities     | Treatment, Education (w/ext) | 587.2 | 76 |
-| 2.1      | @klps4 with no externalities           | Treatment, Education         | 692  | 85  |
-| 3.1      | 1.3 + prevalence + length of treatment | Treatment (EA)               | 97.4      | -                         |
-| 3.2      | 1.4 + prevalence + length              | Treatment (EA)               | 596.4      | -                         |
-| **3.3**  | **2.2 + prevalence + length**          | **Treatment (EA)**           | **623.4**  | **-**                     |
+| 1.1      | @baird2016worms with no externalities  | Treatment, Education         | 61   | 0.4   |
+| 1.2      | @baird2016worms with externalities     | Treatment, Education (w/ext) | 366.2 | 39.8 |
+| 2.1      | @klps4 with no externalities           | Treatment, Education         | 230.7  | 16.7  |
+| 3.1      | 1.3 + prevalence + length of treatment | Treatment (EA)               | 14.4      | -                         |
+| 3.2      | 1.4 + prevalence + length              | Treatment (EA)               | 333      | -                         |
+| **3.3**  | **2.2 + prevalence + length**          | **Treatment (EA)**           | **51.2**  | **-**                     |
 
 <br>
 

@@ -77,7 +77,7 @@ shinyUI(
         "
       ))
     ),
-    theme = shinytheme("united"),
+    theme = shinytheme("yeti"),
     navbarPage("Open Policy Analysis for Deworming Interventions: Open Output Component",id = "asd",
                # Begin main policy estimate tab ----
                tabPanel(
@@ -226,39 +226,39 @@ shinyUI(
                                             <tr>
                                               <th>Country</th>
                                               <th>Unit Costs</th>
-<!--                                              <th>Prevalence</th>
-                                          <th>Length of Treatment</th> -->
+<!--                                          <th>Prevalence</th>
+                                              <th>Length of Treatment</th> -->
                                             </tr>
                                             <tr>
                                               <th>India</th>
                                               <td><var>', round(costs_temp_india,2),'</var></td>
-<!--                                              <td><var>',round(prevalence_india,2),'</var></td>
-                                          <td><var>', round(length_temp_india,2),'</var></td> -->
+<!--                                          <td><var>',round(prevalence_india,2),'</var></td>
+                                             <td><var>', round(length_temp_india,2),'</var></td> -->
                                             </tr>
                                             <tr>
                                               <th>Kenya</th>
                                               <td><var>',round(costs_temp_kenya,2),'</var></td>
-<!--                                              <td><var>',round(prevalence_kenya,2),'</var></td>
-                                          <td><var>',round(length_temp_kenya,2),'</var></td> -->
+<!--                                          <td><var>',round(prevalence_kenya,2),'</var></td>
+                                              <td><var>',round(length_temp_kenya,2),'</var></td> -->
 
                                             </tr>
                                             <tr>
                                               <th>Nigeria</th>
                                               <td><var>',round(costs_temp_nigeria,2),'</var></td>
-<!--                                              <td><var>',round(prevalence_nigeria,2),'</var></td>
-                                          <td><var>',round(length_temp_nigeria,2),'</var></td> -->
+<!--                                          <td><var>',round(prevalence_nigeria,2),'</var></td>
+                                              <td><var>',round(length_temp_nigeria,2),'</var></td> -->
                                             </tr>
                                             <tr>
                                               <th>Vietnam</th>
                                               <td><var>',round(costs_temp_vietnam,2),'</var></td>
-<!--                                              <td><var>',round(prevalence_vietnam,2),'</var></td>
-                                          <td><var>', round(length_temp_vietnam,2),'</var></td> -->
+<!--                                          <td><var>',round(prevalence_vietnam,2),'</var></td>
+                                              <td><var>', round(length_temp_vietnam,2),'</var></td> -->
                                             </tr>
                                             <tr>
                                               <th>Original Study</th>
                                               <td><var>', round(costs_temp_original,2),'</var></td>
-<!--                                              <td><var>', round(prevalence_original,2),'</var></td>
-                                          <td><var>', round(length_temp_original,2),'</var></td> -->
+<!--                                          <td><var>', round(prevalence_original,2),'</var></td>
+                                              <td><var>', round(length_temp_original,2),'</var></td> -->
                                             </tr>
                                           </table>
 
