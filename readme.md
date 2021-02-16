@@ -5,7 +5,7 @@
 <br>
 
 Open in RStudio:
-[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/BITSS-OPA/opa-deworming/master?urlpath=rstudio)
+[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/opposition-policy-analysis/pa-dw-no-opaque-link/6488e0fdab26c61f086bddadf8663222bc06303b?urlpath=rstudio)
 
 Go straight to the Shiny app:
 [![Binder](http://mybinder.org/badge_logo.svg)](https://fhoces.shinyapps.io/shiny_app_test/)
