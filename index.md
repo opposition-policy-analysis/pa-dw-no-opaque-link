@@ -1,7 +1,7 @@
 ---
-title: "<center><div class= 'mytitle'>Open Policy Analysis for Deworming</div></center>"
-date: "<center><div class='mysubtitle'>20 January, 2021<br><img height = '80px' src = './shiny_app/www/bitss_logo_horizontal.png'><img height='80px' src='./shiny_app/www/CEGA_logo.png'></div></center>"
-author: "<center><div class = 'contributors'>BITSS Team. Full list of contributors [here](https://github.com/BITSS-OPA/opa-deworming#list-of-contributors)</div></center>"
+title: "<center><div class= 'mytitle'>Case Study on the Cost Effectiveness of Mass Deworming Interventions</div></center>"
+date: "<center><div class='mysubtitle'>17 February, 2021<br><img height = '200px' src = './shiny_app/www/MAMD_fake_logo.png'></div></center>"
+author: "<center><div class = 'contributors'>Mothers Against Mass Deworming</div></center>"
 editor_options:
   chunk_output_type: console
 output:
@@ -34,10 +34,10 @@ knit:
   # render to index.html for GitHub pages
   # render to 05_final_opa.html to knit locally
   # YAML does not support commenting inside the function
-  (function(input_file, encoding) {
-  rmarkdown::render(input_file, encoding=encoding, output_file=file.path("..", 'index.html'));
-  rmarkdown::render(input_file, encoding=encoding, output_file='01_final_opa.html');
-  })
+  # (function(input_file, encoding) {
+  # })
+  #rmarkdown::render('01_final_opa', encoding=encoding, output_file=file.path("..", 'index.html'));
+  # rmarkdown::render(input_file, encoding=encoding, output_file='01_final_opa.html');
 ---
 
 \def\blue{\color{blue}}
@@ -265,10 +265,9 @@ invisible( list2env(chunk_sources(),.GlobalEnv) )
 
 
 
-<img src="/Users/fhoces/Desktop/sandbox/pa-dw-no-opaque-link/code/images/main_pe.png" width="100%" style="display: block; margin: auto;" />
+<img src="C:/Users/keanu/Documents/GitHub/pa-dw-no-opaque-link/code/images/main_pe.png" width="100%" style="display: block; margin: auto;" />
 
-**Note:** this policy analysis have been modified to illustrate the role of opaqueness in policy analysis, and they do not represent accurate estimates of the effect of deworming. For an open policy analysis that does represent the best available policy estimates on the effects of deworming see [here](http://www.bitss.org/opa/projects/deworming/). 
-
+**Note:** This policy analysis has been modified to illustrate the issues with opaqueness in policy analysis and it does not represent an accurate estimate of the effects of mass deworming. For an open policy analysis that does represent the best available policy estimates on the effects of deworming click [here](http://www.bitss.org/opa/projects/deworming/). 
 
 <div class = "divider"><span></span><span>
 Executive Summary
