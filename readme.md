@@ -7,10 +7,10 @@
 <br>
 
 Open in RStudio:
-[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/opposition-policy-analysis/pa-dw-no-opaque-link/1551998cb48fdbe7020bd42a53718540f8384ebb?urlpath=rstudio)
+[![Binder](http://mybinder.org/badge_logo.svg)]https://mybinder.org/v2/gh/opposition-policy-analysis/pa-dw-no-opaque-link/master?urlpath=rstudio)
 
 Go straight to the Shiny app:
-[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/opposition-policy-analysis/pa-dw-no-opaque-link/1551998cb48fdbe7020bd42a53718540f8384ebb?urlpath=shiny/shiny_app/)
+[![Binder](https://mybinder.org/v2/gh/opposition-policy-analysis/pa-dw-no-opaque-link/master?urlpath=shiny/code/shiny_app/)
 
 This repository and its accompanying dynamic document and Shiny app are
 three key components of an Mothers Against Mass Deworming Analysis (MAMD) on the costs and
