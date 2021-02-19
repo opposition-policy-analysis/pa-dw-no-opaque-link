@@ -105,7 +105,7 @@ shinyUI(
                         )
                       ),
                       tags$li(
-                        tags$a(href = "https://bitss-opa.github.io/opa-deworming/", "A detailed report"),
+                        tags$a(href = "https://opposition-policy-analysis.github.io/pa-dw-no-opaque-link/", "A detailed report"),
                         "that describes how to obtain the policy estimate and describes each component of the analysis"
                       ),
                       tags$li(

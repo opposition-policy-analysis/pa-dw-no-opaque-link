@@ -26,7 +26,7 @@ shinyServer( function(input, output, session) {
   
   reactive.data1<- reactive( {
     sim_data1_f(
-      nsims = as.numeric(input$param_num_of_sim),
+      nsims_var2 = as.numeric(input$param_num_of_sim),
       gov_bonds_var2     = as.numeric(input$param_gov_bonds16),
       gov_bonds_sd_var2  = as.numeric(input$param_gov_bonds16_sd),
       inflation_var2     = as.numeric(input$param_inflation16),
