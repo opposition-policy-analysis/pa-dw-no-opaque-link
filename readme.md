@@ -7,10 +7,10 @@
 <br>
 
 Open in RStudio:
-[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/opposition-policy-analysis/pa-dw-no-opaque-link/1551998cb48fdbe7020bd42a53718540f8384ebb?urlpath=rstudio)
+[![Binder](http://mybinder.org/badge_logo.svg)]https://mybinder.org/v2/gh/opposition-policy-analysis/pa-dw-no-opaque-link/master?urlpath=rstudio)
 
 Go straight to the Shiny app:
-[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/opposition-policy-analysis/pa-dw-no-opaque-link/1551998cb48fdbe7020bd42a53718540f8384ebb?urlpath=shiny/shiny_app/)
+[![Binder](https://keanulim123.shinyapps.io/pa-dw-no-opaque-link-shiny-app/)
 
 This repository and its accompanying dynamic document and Shiny app are
 three key components of an Mothers Against Mass Deworming Analysis (MAMD) on the costs and
@@ -20,13 +20,13 @@ facilitate collaboration and discussion about deworming policy.
 
 <img align="right" width="50%" src="./code/images/OPA_layers2.svg">
 
-1 - [An interactive plot](https://fhoces.shinyapps.io/shiny_app_test/),
+1 - [An interactive plot](https://keanulim123.shinyapps.io/pa-dw-no-opaque-link-shiny-app/),
 which summarizes the interactions between all key parameters for a given
 set of assumptions. Materials can be found in:
 [`code/shiny_app`](https://github.com/opposition-policy-analysis/pa-dw-no-opaque-link/tree/master/code/shiny_app).
 
 2 - Open policy report in the form of a [dynamic
-document](https://bitss-opa.github.io/opa-deworming/), which details all
+document](https://opposition-policy-analysis.github.io/pa-dw-no-opaque-link/), which details all
 data, code, and assumptions included in the analysis. Materials can be
 found in:
 [`code/dynamic_doc`](https://github.com/opposition-policy-analysis/pa-dw-no-opaque-link/blob/master/code/01_final_opa.Rmd).
