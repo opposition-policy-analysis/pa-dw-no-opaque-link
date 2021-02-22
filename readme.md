@@ -1,5 +1,5 @@
 
-# Case Study on the Cost Effectiveness of Mass Deworming Interventions
+# Case Study on the Cost Effectiveness of Mass Deworming Interventions (Opposition Analysts Without All Assumptions Component)
 
 ## **This is a *fictitous* policy analsysis meant to demonstrate the value of the OPA framework**
 
@@ -9,16 +9,13 @@
 Open in RStudio:
 [![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/opposition-policy-analysis/pa-dw-no-opaque-link/master?urlpath=rstudio)
 
-Go straight to the Shiny app:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://keanulim123.shinyapps.io/pa-dw-no-opaque-link-shiny-app/)
-
 This repository and its accompanying dynamic document and Shiny app are
 three key components of an Mothers Against Mass Deworming Analysis (MAMD) on the costs and
 benefits of mass deworming interventions in various settings. Together,
 these materials create a transparent and reproducible analysis to
 facilitate collaboration and discussion about deworming policy.
 
-<img align="right" width="50%" src="./code/images/OPA_layers2.svg">
+<img align="right" width="50%" src="./code/images/OPA_opaque_layers.svg">
 
 1 - [An interactive plot](https://keanulim123.shinyapps.io/pa-dw-no-opaque-link-shiny-app/),
 which summarizes the interactions between all key parameters for a given

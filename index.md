@@ -1,6 +1,6 @@
 ---
 title: "<center><div class= 'mytitle'>Case Study on the Cost Effectiveness of Mass Deworming Interventions</div></center>"
-date: "<center><div class='mysubtitle'>18 February, 2021<br><img height = '200px' src = './shiny_app/www/MAMD_fake_logo.png'></div></center>"
+date: "<center><div class='mysubtitle'>22 February, 2021<br><img height = '200px' src = './shiny_app/www/MAMD_fake_logo.png'></div></center>"
 author: "<center><div class = 'contributors'>Mothers Against Mass Deworming</div></center>"
 editor_options:
   chunk_output_type: console
