@@ -1,6 +1,6 @@
 ---
 title: "<center><div class= 'mytitle'>Case Study on the Cost Effectiveness of Mass Deworming Interventions</div></center>"
-date: "<center><div class='mysubtitle'>22 February, 2021<br><img height = '200px' src = './shiny_app/www/MAMD_fake_logo.png'></div></center>"
+date: "<center><div class='mysubtitle'>02 April, 2021<br><img height = '200px' src = './shiny_app/www/MAMD_fake_logo.png'><a href = 'http://www.bitss.org/opa/projects/deworming/'><img height = '60px' src = './shiny_app/www/OPA_layers.png'></a></div></center>"
 author: "<center><div class = 'contributors'>Mothers Against Mass Deworming</div></center>"
 editor_options:
   chunk_output_type: console
@@ -265,7 +265,7 @@ invisible( list2env(chunk_sources(),.GlobalEnv) )
 
 
 
-<img src="C:/Users/keanu/Documents/GitHub/pa-dw-no-opaque-link/code/images/main_pe.png" width="100%" style="display: block; margin: auto;" />
+<img src="C:/Users/thepe/Documents/GitHub/pa-dw-yes-opaque-link/code/images/main_pe.png" width="100%" style="display: block; margin: auto;" />
 
 **Note:** This policy analysis has been modified to illustrate the issues with opaqueness in policy analysis and it does not represent an accurate estimate of the effects of mass deworming. For an open policy analysis that does represent the best available policy estimates on the effects of deworming click [here](http://www.bitss.org/opa/projects/deworming/). 
 

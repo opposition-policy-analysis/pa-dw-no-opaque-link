@@ -3,19 +3,19 @@
 
 ## **This is a *fictitous* policy analsysis meant to demonstrate the value of the OPA framework**
 
-<img width="200" src="./code/images/MAMD_fake_logo.png">
+<img width="200" src="./code/images/MAMD_fake_logo.png"><img height='80' src='./code/images/OPA_layers_no_assumptions.svg'>
 <br>
 
 Open in RStudio:
 [![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/opposition-policy-analysis/pa-dw-no-opaque-link/master?urlpath=rstudio)
+
+<img align="right" width="50%" src="./code/shiny_app/www/OPA_layers_materials.png">
 
 This repository and its accompanying dynamic document and Shiny app are
 three key components of an Mothers Against Mass Deworming Analysis (MAMD) on the costs and
 benefits of mass deworming interventions in various settings. Together,
 these materials create a transparent and reproducible analysis to
 facilitate collaboration and discussion about deworming policy.
-
-<img align="right" width="50%" src="./code/images/OPA_opaque_layers.svg">
 
 1 - [An interactive plot](https://keanulim123.shinyapps.io/pa-dw-no-opaque-link-shiny-app/),
 which summarizes the interactions between all key parameters for a given
